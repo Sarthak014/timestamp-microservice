@@ -1,4 +1,9 @@
-const { inMSF, inDF } = require("../utilities/validators/dateFormat");
+const { inMSF } = require("../utilities/validators/dateFormat");
+
+function isValidDate(dateString) {
+  const date = new Date(dateString);
+  return !isNaN(date) && date.toString() !== 'Invalid Date';
+}
 
 const getUTCTimestamp = (date) => {
   let response = {};
@@ -17,7 +22,7 @@ const getUTCTimestamp = (date) => {
       const utc = dateFormat.toUTCString();
 
       response = { unix, utc };
-    } else if (inDF(date)) {
+    } else if (isValidDate(date)) {
       const dateFormat = new Date(date);
       const unix = dateFormat.getTime();
       const utc = dateFormat.toUTCString();
