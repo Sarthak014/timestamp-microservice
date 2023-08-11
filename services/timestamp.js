@@ -3,7 +3,7 @@ const { inMSF, inDF } = require("../utilities/validators/dateFormat");
 const getUTCTimestamp = (date) => {
   let response = {};
 
-  if (isNaN(date)) {
+  if (!date) {
     const date = new Date();
 
     const unix = date.getTime();
