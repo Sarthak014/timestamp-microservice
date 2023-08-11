@@ -12,9 +12,7 @@ This Git repository contains a simple and efficient Timestamp Microservice that 
 1. Create a .env file in the root directory of the project and specify the desired port number:
   <br />
   <pre>
-    ```plaintext
     PORT=3000
-    ```
   </pre>
 
   Replace <b>`3000`</b> with your preferred port number.
@@ -25,17 +23,13 @@ This Git repository contains a simple and efficient Timestamp Microservice that 
   - To get UTC timestamp and time in milliseconds for a given date, use the following endpoint:
   <br />
   <pre>
-    ```javascript
     GET http://localhost:3000/api/:date
-    ```
   </pre>
     
   - To get UTC timestamp for a specified number of milliseconds, use the following endpoint:
     <br />
     <pre>
-      ```javascript
       GET http://localhost:3000/api/:milliseconds
-      ```
     </pre>
 
 # Contributing
