@@ -1,0 +1,30 @@
+{
+  "name": "timestamp",
+  "version": "1.0.1",
+  "description": "Timestamp Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.12.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freeCodeCamp/boilerplate-project-timestamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp/issues"
+  },
+  "homepage": "https://github.com/freeCodeCamp/boilerplate-project-timestamp#readme",
+  "author": "Sarthak Agarwal",
+  "keywords": [
+    "node",
+    "express",
+    "freeCodeCamp",
+    "Sarthak014"
+  ],
+  "license": "MIT"
+}
